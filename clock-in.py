@@ -116,13 +116,13 @@ class ClockIn(object):
         new_info['sfqrxxss'] = 1    # 是否确认信息属实
         new_info['jcqzrq'] = ""
         new_info['gwszdd'] = ""
-        new_info['szgjcs'] = ""
+        new_info['szgjcs'] = 2
         
         # 2022.05.07
         # new_info['verifyCode'] = self.get_captcha() # 验证码识别（已取消）
         
         # 2022.07.05
-        new_info['internship'] = 3  # 今日是否进行实习或实践
+        new_info['sfjxsxhsj'] = 3  # 今日是否进行实习或实践
 
         # 2021.08.05 Fix 2
         magics = re.findall(r'"([0-9a-f]{32})":\s*"([^\"]+)"', html)
